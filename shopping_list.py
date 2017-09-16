@@ -4,14 +4,17 @@ def show_help():
     print("Type SHOW to show current list")
     print("Type HELP to display help")
 
+
 # Printing out all items on the list
 def show_list():
     print("Here is the full list:")
     for item in shopping_list:
         print(item)
 
+
 # Creating empty shopping list
 shopping_list = []
+
 
 # Show initial HELP message
 show_help()
