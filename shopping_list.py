@@ -12,9 +12,13 @@ def show_list():
         print(item)
 
 
+def add_to_list():
+    # Add new items to the list
+    shopping_list.append(new_item)
+
+
 # Creating empty shopping list
 shopping_list = []
-
 
 # Show initial HELP message
 show_help()
@@ -35,8 +39,3 @@ while True:
     # Process "SHOW" request
     elif new_item == "SHOW":
         show_list()
-
-    shopping_list.append(new_item) # Add new items to the list
-
-
-
