@@ -23,6 +23,9 @@ show_help()
 while True:
     try:
         players_guess = int(input("Please, guess secret number from 1 to 10: "))
+    except ValueError:
+        print("I need number, man! Number!")
+    else:
         if players_guess == secret_number:
             print("Hoorah, you guessed right!")
             break
@@ -30,5 +33,4 @@ while True:
             print("Way too far away!")
         else:
             print("Not, my secret number is not {}".format(players_guess))
-    except ValueError:
-        print("I need number, man! Number!")
+
