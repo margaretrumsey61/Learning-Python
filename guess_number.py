@@ -21,8 +21,10 @@ def new_game():
             if players_guess == secret_number:
                 print("Hooray, you guessed right!")
                 break
+            elif players_guess > secret_number:
+                print("Not, my secret number is less than {}".format(players_guess))
             else:
-                print("Not, my secret number is not {}".format(players_guess))
+                print("Not, my secret number is higher than {}".format(players_guess))
 
             guesses.append(players_guess)
     else:
