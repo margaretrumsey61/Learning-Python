@@ -21,11 +21,14 @@ secret_number = generate_secret_number()
 show_help()
 
 while True:
-    players_guess = int(input("Please, guess secret number from 1 to 10: "))
-    if players_guess == secret_number:
-        print("Hoorah, you guessed right!")
-        break
-    elif check_for_delta():
-        print("Way too far away!")
-    else:
-        print("Not, my secret number is not {}".format(players_guess))
+    try:
+        players_guess = int(input("Please, guess secret number from 1 to 10: "))
+        if players_guess == secret_number:
+            print("Hoorah, you guessed right!")
+            break
+        elif check_for_delta():
+            print("Way too far away!")
+        else:
+            print("Not, my secret number is not {}".format(players_guess))
+    except ValueError:
+        print("I need number, man! Number!")
