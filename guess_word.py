@@ -1,14 +1,6 @@
 import random
 
 
-# make a list of words
-# pick a random word
-# draw spaces
-# take guess
-# draw guess, good and bad guesses
-# print out win / lose
-
-
 library = [
     "apple",
     "lemon",
