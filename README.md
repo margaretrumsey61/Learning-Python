@@ -5,3 +5,4 @@ This library contains my simple scripts which i developed during study of Python
 * [Age notification](https://github.com/SimonOsipov/Learning-Python/blob/master/age_calc.py) - *Enter year of your birth and receive info about your 25th, 50th, 75 and 100th anniversary*
 * [Shopping list](https://github.com/SimonOsipov/Learning-Python/blob/master/shopping_list.py) - *Simple program to creating shopping lists*
 * [Guess the number](https://github.com/SimonOsipov/Learning-Python/blob/master/guess_number.py) - *Guess the number from 1 to 10*
+* [Guess the Word](https://github.com/SimonOsipov/Learning-Python/blob/master/guess_word.py) - *Guess the word from the library*
