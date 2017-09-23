@@ -7,7 +7,8 @@ def show_help():
     # Printing out introduction for the player
     print("Hi, my name is Mr. Robot!\n"
           "I want you to play my game.\n"
-          "You have 5 attempts to guess what number I picked for you (from 1 to 10) \n")
+          "You have 5 attempts to guess what number "
+          "I picked for you (from 1 to 10) \n")
 
 
 # Define new_game function
@@ -33,7 +34,8 @@ def new_game():
 
         # Exception handling (not number)
         except ValueError:
-            print("I need number, man! Number! '{}' is not the number \n".format(players_guess))
+            print("I need number, man! Number! "
+                  "'{}' is not the number \n".format(players_guess))
 
         # main logic happens here =)
         else:
@@ -47,23 +49,27 @@ def new_game():
 
             # If player's guess > secret number - notify that
             elif players_guess > secret_number:
-                print("Not, my secret number is less than {} \n".format(players_guess))
+                print("Not, my secret number"
+                      " is less than {} \n".format(players_guess))
 
             # If player's guess is less - notify him
             else:
-                print("Not, my secret number is higher than {} \n".format(players_guess))
+                print("Not, my secret number"
+                      " is higher than {} \n".format(players_guess))
 
             # Add 1 guess to the list
             guesses.append(players_guess)
 
     # If player is out of guesses (5) - notify with actual secret number
     else:
-        print("You ran out of guesses. {} was the right answer \n".format(secret_number))
+        print("You ran out of guesses. "
+              "{} was the right answer \n".format(secret_number))
 
     # Ask player about new game with Y/n choose
     play_again = input("Do you want to play again? Y/n \n")
 
-    # since we used Y (strong yes), any input except 'n' will be considered as 'Yes'
+    # since we used Y (strong yes),
+    # any input except 'n' will be considered as 'Yes'
     if play_again != 'n':
         new_game()
 
