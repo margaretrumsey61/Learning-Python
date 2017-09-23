@@ -15,7 +15,8 @@ def show_list():
 def add_to_list():
     # Add new items to the list
     shopping_list.append(new_item)
-    print("Item '{}' added. Now list have {} items".format(new_item, len(shopping_list)))
+    print(f"Item '{new_item}' added. "
+          "Now list have {len(shopping_list)} items")
 
 
 # Creating empty shopping list
