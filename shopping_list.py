@@ -2,6 +2,14 @@ import os
 import sys
 
 
+# Function to clear screen
+def clear_screen():
+    if os.name == "nt":
+        os.system("cls")
+    else:
+        os.system("clear")
+
+
 # Function to show help for user
 def show_help():
     print("Type DONE to finish")
@@ -12,12 +20,14 @@ def show_help():
 
 # Printing out all items on the list
 def show_list():
+    clear_screen()
     print("Here is the full list:")
     for product in shopping_list:
         print(product)
 
 
 def add_to_list():
+    clear_screen()
     # Add new items to the list
     shopping_list.append(new_item)
     print(f"Item '{new_item}' added. "
