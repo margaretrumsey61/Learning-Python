@@ -35,7 +35,7 @@ while True:
     new_item = input("> ")  # Ask for new items
 
     # Process "DONE" request
-    if new_item == "DONE":
+    if new_item.lower() == "done":
         show_list()
         print("______________________")
         exit_sign = input("For exit type any key: ")
@@ -43,12 +43,12 @@ while True:
             sys.exit()
 
     # Process "HELP" request
-    elif new_item == "HELP":
+    elif new_item.lower() == "help":
         show_help()
         continue
 
     # Process "SHOW" request
-    elif new_item == "SHOW":
+    elif new_item.lower() == "show":
         show_list()
         continue
 
