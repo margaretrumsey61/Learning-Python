@@ -1,9 +1,13 @@
+import os
+import sys
+
+
 # Function to show help for user
 def show_help():
     print("Type DONE to finish")
     print("Type SHOW to show current list")
     print("Type CLEAR to clear whole list")
-    print("Type HELP to display help")
+    print("Type HELP to display this help")
 
 
 # Printing out all items on the list
@@ -32,7 +36,11 @@ while True:
 
     # Process "DONE" request
     if new_item == "DONE":
-        break
+        show_list()
+        print("______________________")
+        exit_sign = input("For exit type any key: ")
+        if exit_sign:
+            sys.exit()
 
     # Process "HELP" request
     elif new_item == "HELP":
