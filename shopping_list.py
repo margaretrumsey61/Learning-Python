@@ -18,6 +18,7 @@ def show_help():
           "Type DONE to finish\n"
           "Type SHOW to show current list\n"
           "Type CLEAR to clear whole list\n"
+          "Type DELETE to delete certain position\n"
           "Type HELP to display this help\n")
 
 
