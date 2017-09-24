@@ -4,8 +4,10 @@ import sys
 
 # Function to clear screen
 def clear_screen():
+    # If our system is Widows, then we utilize command /cls
     if os.name == "nt":
         os.system("cls")
+    # Else our system is MacOS or Unix, than command /clear
     else:
         os.system("clear")
 
@@ -30,11 +32,15 @@ def show_list():
 # Adding item to the list
 def add_to_list(item):
     clear_screen()
-    # Add new items to the list
+    # Handing error on picking position where to put item
     try:
         position = int(input("Where (position) add this item: "))
+
+    # Value Error - item will go to the end of the list
     except ValueError:
         shopping_list.append(item)
+
+    # Else - we add item on requested index in our list
     else:
         shopping_list.insert(position - 1, item)
         print(f"Item '{item}' added at {position}."
