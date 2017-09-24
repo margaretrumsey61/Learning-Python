@@ -23,7 +23,7 @@ def show_list():
     clear_screen()
     print("Here is the full list:")
     for product in shopping_list:
-        print(f"{shopping_list.index(product) + 1} {product}")
+        print(f"{shopping_list.index(product) - 1} {product}")
 
 
 def add_to_list(item):
