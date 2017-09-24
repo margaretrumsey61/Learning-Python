@@ -47,8 +47,7 @@ def exit_program():
 
 # Clearing all off from the list
 def clear_list():
-    for every_product in shopping_list:
-        shopping_list.remove(every_product)
+    del shopping_list[:]
 
 
 # Creating empty shopping list
