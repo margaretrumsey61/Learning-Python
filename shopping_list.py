@@ -26,6 +26,7 @@ def show_list():
         print(f"{shopping_list.index(product) + 1} {product}")
 
 
+# Adding item to the list
 def add_to_list(item):
     clear_screen()
     # Add new items to the list
@@ -39,6 +40,7 @@ def add_to_list(item):
               f"Now list have {len(shopping_list)} items")
 
 
+# Exiting program properly
 def exit_program():
     exit_sign = input("Type any key for exit: ")
     if exit_sign:
