@@ -26,11 +26,12 @@ def show_list():
         print(f"{shopping_list.index(product) + 1} {product}")
 
 
-def add_to_list():
+def add_to_list(item):
     clear_screen()
     # Add new items to the list
-    shopping_list.append(new_item)
-    print(f"Item '{new_item}' added. "
+    position = int(input("Where (position) add this item: "))
+    shopping_list.insert(position, item)
+    print(f"Item '{item}' added at {position}. "
           f"Now list have {len(shopping_list)} items")
 
 
@@ -53,6 +54,7 @@ while True:
     # Process "DONE" request
     if new_item.lower() == "done":
         show_list()
+        exit_program()
 
     # Process "HELP" request
     elif new_item.lower() == "help":
@@ -64,4 +66,4 @@ while True:
         show_list()
         continue
 
-    add_to_list()
+    add_to_list(new_item)
