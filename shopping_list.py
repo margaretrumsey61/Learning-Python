@@ -29,6 +29,17 @@ def show_list():
         print(f"{shopping_list.index(product) + 1} {product}")
 
 
+def delete_from_list():
+    clear_screen()
+    try:
+        delete_position = int(input("Position you would like to delete: "))
+    except ValueError:
+        print("Error! You need to type position!")
+        delete_from_list()
+    else:
+        del shopping_list[delete_position - 1]
+
+
 # Adding item to the list
 def add_to_list(item):
     clear_screen()
@@ -87,6 +98,11 @@ while True:
     # Process "CLEAR" request
     elif new_item.lower() == "clear":
         clear_list()
+        continue
+
+    # Process "DELETE" request
+    elif new_item.lower() == "delete":
+        delete_from_list()
         continue
 
     add_to_list(new_item)
