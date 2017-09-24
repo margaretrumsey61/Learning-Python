@@ -23,16 +23,20 @@ def show_list():
     clear_screen()
     print("Here is the full list:")
     for product in shopping_list:
-        print(f"{shopping_list.index(product) - 1} {product}")
+        print(f"{shopping_list.index(product) + 1} {product}")
 
 
 def add_to_list(item):
     clear_screen()
     # Add new items to the list
     position = int(input("Where (position) add this item: "))
-    shopping_list.insert(position, item)
-    print(f"Item '{item}' added at {position}. "
-          f"Now list have {len(shopping_list)} items")
+    try:
+        shopping_list.insert(position - 1, item)
+    except ValueError:
+        shopping_list.append(item)
+    else:
+        print(f"Item '{item}' added at {position}."
+              f"Now list have {len(shopping_list)} items")
 
 
 def exit_program():
