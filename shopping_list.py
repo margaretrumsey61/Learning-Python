@@ -34,6 +34,12 @@ def add_to_list():
           f"Now list have {len(shopping_list)} items")
 
 
+def exit_program():
+    exit_sign = input("Type any key for exit: ")
+    if exit_sign:
+        sys.exit()
+
+
 # Creating empty shopping list
 shopping_list = []
 
@@ -47,10 +53,6 @@ while True:
     # Process "DONE" request
     if new_item.lower() == "done":
         show_list()
-        print("______________________")
-        exit_sign = input("For exit type any key: ")
-        if exit_sign:
-            sys.exit()
 
     # Process "HELP" request
     elif new_item.lower() == "help":
