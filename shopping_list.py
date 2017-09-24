@@ -41,6 +41,12 @@ def exit_program():
         sys.exit()
 
 
+# Clearing all off from the list
+def clear_list():
+    for every_product in shopping_list:
+        shopping_list.remove(every_product)
+
+
 # Creating empty shopping list
 shopping_list = []
 
@@ -64,6 +70,11 @@ while True:
     # Process "SHOW" request
     elif new_item.lower() == "show":
         show_list()
+        continue
+
+    # Process "CLEAR" request
+    elif new_item.lower() == "clear":
+        clear_list()
         continue
 
     add_to_list(new_item)
