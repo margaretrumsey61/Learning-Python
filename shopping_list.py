@@ -12,10 +12,11 @@ def clear_screen():
 
 # Function to show help for user
 def show_help():
-    print("Type DONE to finish")
-    print("Type SHOW to show current list")
-    print("Type CLEAR to clear whole list")
-    print("Type HELP to display this help")
+    print("Please, add everything for your shopping cart to the list!\n"
+          "Type DONE to finish\n"
+          "Type SHOW to show current list\n"
+          "Type CLEAR to clear whole list\n"
+          "Type HELP to display this help\n")
 
 
 # Printing out all items on the list
