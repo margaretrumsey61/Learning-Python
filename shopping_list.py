@@ -29,12 +29,12 @@ def show_list():
 def add_to_list(item):
     clear_screen()
     # Add new items to the list
-    position = int(input("Where (position) add this item: "))
     try:
-        shopping_list.insert(position - 1, item)
+        position = int(input("Where (position) add this item: "))
     except ValueError:
         shopping_list.append(item)
     else:
+        shopping_list.insert(position - 1, item)
         print(f"Item '{item}' added at {position}."
               f"Now list have {len(shopping_list)} items")
 
