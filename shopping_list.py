@@ -67,7 +67,7 @@ show_help()
 
 # Entering new items
 while True:
-    new_item = input("> ")  # Ask for new items
+    new_item = input("What you would like to add? > ")  # Ask for new items
 
     # Process "DONE" request
     if new_item.lower() == "done":
