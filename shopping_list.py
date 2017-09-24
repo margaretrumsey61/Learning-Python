@@ -30,13 +30,19 @@ def show_list():
         print(f"{shopping_list.index(product) + 1} {product}")
 
 
+# Function for deleting item from certain position
 def delete_from_list():
     clear_screen()
+
+    # Handling wrong input from user
     try:
         delete_position = int(input("Position you would like to delete: "))
+
+    # ValueError if not integer inputed
     except ValueError:
         print("Error! You need to type position!")
-        delete_from_list()
+
+    # Deleting position from the list, -1 index since our list starts from 1
     else:
         del shopping_list[delete_position - 1]
 
