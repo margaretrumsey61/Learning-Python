@@ -30,6 +30,25 @@ def show_list():
         print(f"{shopping_list.index(product) + 1} {product}")
 
 
+# Function for changing places of items
+def change_position():
+    clear_screen()
+
+    try:
+        move_position = int(input("What you would like to move: "))
+    except ValueError:
+        print("You need to enter # of position")
+    else:
+        clear_screen()
+        try:
+            new_position = int(input("Where you would like to put it: "))
+        except ValueError:
+            print("You need to enter # of position")
+        else:
+            shopping_list.insert(new_position - 1,
+                                 shopping_list.pop(move_position - 1))
+
+
 # Function for deleting item from certain position
 def delete_from_list():
     clear_screen()
@@ -110,6 +129,11 @@ while True:
     # Process "DELETE" request
     elif new_item.lower() == "delete":
         delete_from_list()
+        continue
+
+    # Process "MOVE" request
+    elif new_item.lower() == "move":
+        change_position()
         continue
 
     add_to_list(new_item)
