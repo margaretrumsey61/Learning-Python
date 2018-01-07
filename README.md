@@ -49,7 +49,7 @@ This mega library contains some of the problems i solved during study of Python.
 ## Data Structures
 - [ ] **Inverted index** - An Inverted Index is a data structure used to create full text search. Given a set of text files, implement a program to create an inverted index.
 ## Text
-- [x] **[Hello, World!](https://github.com/SimonOsipov/Learning-Python/blob/master/Text/hello_world.py)** - Simple stdout "Hello World!". Why not to show it?
+- [x] **[Hello, World!](https://github.com/SimonOsipov/Learning-Python/blob/master/Text/hello_world.py)** - Simple stdout "Hello World!". Why not to show it? Just for lulz..
 - [ ] **Fizz Buzz**- Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.
 - [ ] **Reverse a String** - Enter a string and the program will reverse it and print it out.
 - [ ] **Pig Latin** - Pig Latin is a game of alterations played on the English language game. To create the Pig Latin form of an English word the initial consonant sound is transposed to the end of the word and an ay is affixed (Ex.: "banana" would yield anana-bay). Read Wikipedia for more information on rules.
