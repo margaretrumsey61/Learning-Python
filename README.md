@@ -48,7 +48,7 @@ This library contains some of the problems i solved during study of Python. Clic
 - [ ] Dijkstra’s Algorithm - Create a program that finds the shortest path through a graph using its edges.
 - [ ] Minimum Spanning Tree - Create a program which takes a connected, undirected graph with weights and outputs the minimum spanning tree of the graph i.e., a subgraph that is a tree, contains all the vertices, and the sum of its weights is the least possible.
 ## Data Structures
-Inverted index - An Inverted Index is a data structure used to create full text search. Given a set of text files, implement a program to create an inverted index. Also create a user interface to do a search using that inverted index which returns a list of files that contain the query term / terms. The search index can be in memory.
+- [ ] Inverted index - An Inverted Index is a data structure used to create full text search. Given a set of text files, implement a program to create an inverted index. Also create a user interface to do a search using that inverted index which returns a list of files that contain the query term / terms. The search index can be in memory.
 ## Text
 - [x] [Hello, World!](https://github.com/SimonOsipov/Learning-Python/blob/master/hello_world.py) - Simple stdout "Hello World!". Why not to show it?
 - [ ] Fizz Buzz - Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.
