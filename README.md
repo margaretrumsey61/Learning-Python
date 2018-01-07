@@ -1,18 +1,18 @@
 # Learning-Python
 This library contains some of the problems i solved during study of Python. Click on link to get familiar with the code.
 ## Table of Contents
-* Numbers
-* Classic Algorithms
-* Graph
-* Data Structures
-* Text
-* Networking
-* Classes
-* Threading
-* Files
-* Databases
-* Graphics and Multimedia
-* Security
+* [Numbers](https://github.com/SimonOsipov/Learning-Python#numbers)
+* [Classic Algorithms](https://github.com/SimonOsipov/Learning-Python#classic-algorithms)
+* [Graph](https://github.com/SimonOsipov/Learning-Python#graph)
+* [Data Structures](https://github.com/SimonOsipov/Learning-Python#data-structures)
+* [Text](https://github.com/SimonOsipov/Learning-Python#text)
+* [Networking](https://github.com/SimonOsipov/Learning-Python#networking)
+* [Classes](https://github.com/SimonOsipov/Learning-Python#classes)
+* [Threading](https://github.com/SimonOsipov/Learning-Python#threading)
+* [Files](https://github.com/SimonOsipov/Learning-Python#files)
+* [Databases](https://github.com/SimonOsipov/Learning-Python#databases)
+* [Graphics and Multimedia](https://github.com/SimonOsipov/Learning-Python#graphics-and-multimedia)
+* [Security](https://github.com/SimonOsipov/Learning-Python#security)
 ## Numbers
 - [ ] Find PI to the Nth Digit - Enter a number and have the program generate PI up to that many decimal places  
 - [ ] Find e to the Nth Digit - Just like the previous problem, but with e instead of PI. Enter a number and have the program generate e up to that many decimal places.
