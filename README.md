@@ -1,6 +1,7 @@
 # Learning-Python
 This mega library contains some of the problems i solved during study of Python. Click on link to get familiar with the code.
 ## Table of Contents
+* [Programming Taskbook](https://github.com/SimonOsipov/Learning-Python#programming-taskbook)
 * [Numbers](https://github.com/SimonOsipov/Learning-Python#numbers)
 * [Classic Algorithms](https://github.com/SimonOsipov/Learning-Python#classic-algorithms)
 * [Graph](https://github.com/SimonOsipov/Learning-Python#graph)
@@ -13,6 +14,9 @@ This mega library contains some of the problems i solved during study of Python.
 * [Databases](https://github.com/SimonOsipov/Learning-Python#databases)
 * [Graphics and Multimedia](https://github.com/SimonOsipov/Learning-Python#graphics-and-multimedia)
 * [Security](https://github.com/SimonOsipov/Learning-Python#security)
+
+## Programming Taskbook
+- [ ] **1-40** - Input-Output and Assignments
 ## Numbers
 - [ ] **Find PI to the Nth Digit** - Enter a number and have the program generate PI up to that many decimal places  
 - [ ] **Find e to the Nth Digit** - Enter a number and have the program generate e up to that many decimal places.
